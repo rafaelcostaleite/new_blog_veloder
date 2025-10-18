@@ -37,48 +37,63 @@
   - Incluir palavras-chave nos títulos
 
 ### 3. Otimização SEO
+- **Frase-chave de Foco**
+  - Identificar a frase-chave principal do conteúdo (2-5 palavras)
+  - Máximo de 60 caracteres
+  - Deve refletir o tema central do artigo
+  - Priorizar termos que o público-alvo busca
+  - Considerar volume de busca vs. competitividade
+  - Exemplos válidos:
+    - "estratégias de marketing digital 2025"
+    - "como treinar para maratona"
+    - "receitas veganas rápidas"
+  - Usar no H1, nos primeiros 100 caracteres e naturalmente ao longo do texto
+  - Densidade ideal: 1-2% do texto total
+
 - **Título SEO**
-  - Máximo 60 caracteres
-  - Incluir palavra-chave principal
+  - Entre 55-60 caracteres (máximo 60)
+  - Incluir a palavra-chave principal
   - Atrativo e claro
   - Incluir ano quando relevante (ex: 2025)
 
 - **Meta Descrição**
-  - 150-155 caracteres
-  - Incluir palavra-chave
-  - Call-to-action implícito
-  - Resumir valor do conteúdo
+  - Entre 150-155 caracteres (máximo 160)
+  - Incluir a palavra-chave principal
+  - Call-to-action implícito ou explícito
+  - Resumir o valor do conteúdo de forma atrativa
 
 - **Palavras-chave**
-  - Identificar 5-7 keywords
-  - Mix de short-tail e long-tail
-  - Verificar densidade (1-2%)
-  - Incluir variações
+  - Identificar 5-7 keywords relevantes
+  - Mix de short-tail (1-2 palavras) e long-tail (3+ palavras)
+  - Verificar densidade da palavra-chave principal (1-2%)
+  - Incluir variações e sinônimos naturais
 
 - **Slug/URL**
-  - Máximo 5-6 palavras
-  - Apenas minúsculas
-  - Separado por hífens
-  - Incluir palavra-chave principal
-  - Sem caracteres especiais
+  - Máximo de 5-6 palavras
+  - Apenas minúsculas e hífens
+  - Separar palavras por hífens (-)
+  - Incluir a palavra-chave principal no início
+  - Sem caracteres especiais, acentos ou espaços
 
 ### 4. Otimizações Adicionais
 - **Legibilidade**
-  - Verificar Flesch Reading Ease
-  - Garantir parágrafos curtos
-  - Usar voz ativa
+  - Verificar índice Flesch Reading Ease
+  - Garantir parágrafos curtos (máximo 3-4 linhas)
+  - Usar voz ativa predominantemente
   - Simplificar frases complexas
+  - Evitar jargões desnecessários
 
 - **Links Internos** (sugestões)
-  - Identificar oportunidades de link interno
-  - Sugerir anchor texts relevantes
+  - Identificar oportunidades de links internos
+  - Sugerir textos âncora (anchor texts) relevantes e descritivos
+  - Priorizar links que agregam valor ao leitor
 
 ## Restrições
-- ❌ Não alterar significado original
-- ❌ Não adicionar informações novas
-- ❌ Não usar keyword stuffing
-- ❌ Não criar HTML inválido
-- ❌ Não exceder limites de caracteres SEO
+- ❌ Não alterar o significado original do conteúdo
+- ❌ Não adicionar informações novas não presentes no texto original
+- ❌ Não usar keyword stuffing (repetição excessiva de palavras-chave)
+- ❌ Não criar HTML inválido ou malformado
+- ❌ Não exceder os limites de caracteres para elementos SEO
 
 ## Formato de Output
 
@@ -113,14 +128,17 @@
 ```
 === DADOS SEO ===
 
+Frase-chave de Foco:
+[Frase-chave principal do artigo - 2-5 palavras]
+
 Título SEO:
-[Título otimizado com 55-60 caracteres incluindo palavra-chave]
+[Título otimizado com 55-60 caracteres incluindo a palavra-chave]
 
 Meta Descrição:
-[Descrição atrativa com 150-155 caracteres, palavra-chave e CTA implícito]
+[Descrição atrativa com 150-155 caracteres, incluindo palavra-chave e CTA]
 
 Palavras-chave:
-palavra-chave-principal, palavra-chave-secundaria, long-tail-keyword, variacao-keyword, termo-relacionado
+palavra-chave-principal, palavra-chave-secundária, long-tail-keyword, variação-keyword, termo-relacionado
 
 Slug:
 palavra-chave-principal-termo-relevante
