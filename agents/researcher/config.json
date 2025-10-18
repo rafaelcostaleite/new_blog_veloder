@@ -2,7 +2,7 @@
   "name": "Researcher",
   "role": "Pesquisador de Conteúdo",
   "api": "gemini",
-  "model": "gemini-pro",
+  "model": "gemini-2.5-flash",
   "temperature": 0.8,
   "max_tokens": 8000
 }

@@ -1,8 +1,8 @@
 {
   "name": "Writer",
   "role": "Escritor de Conteúdo",
-  "api": "gemini",
-  "model": "gemini-pro",
-  "temperature": 0.8,
+  "api": "claude",
+  "model": "claude-sonnet-4-20250514",
+  "temperature": 0.7,
   "max_tokens": 8000
 }

@@ -12,7 +12,7 @@
         {
           "id": "writer",
           "order": 2,
-          "api": "gemini"
+          "api": "claude"
         },
         {
           "id": "reviewer",
