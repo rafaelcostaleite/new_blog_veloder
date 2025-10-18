@@ -9,6 +9,7 @@ Criar um post de blog completo e envolvente baseado nos dados de pesquisa.
 3. Desenvolvimento com subtópicos
 4. Exemplos práticos
 5. Conclusão com call-to-action
+6. Utilize palavras de transição em seu texto
 
 ## Diretrizes
 - Mínimo 800 palavras
