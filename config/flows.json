@@ -1,0 +1,26 @@
+{
+  "flows": [
+    {
+      "name": "Post_Esportivo",
+      "description": "Fluxo para criação de posts com notícias e informações esportivas.",
+      "agents": [
+        {
+          "id": "researcher",
+          "order": 1,
+          "api": "gemini"
+        },
+        {
+          "id": "writer",
+          "order": 2,
+          "api": "gemini"
+        },
+        {
+          "id": "reviewer",
+          "order": 3,
+          "api": "claude"
+        }
+      ],
+      "output_files": ["Post.txt", "SEO.txt"]
+    }
+  ]
+}

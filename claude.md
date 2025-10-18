@@ -268,7 +268,7 @@ JSON contendo:
 # Ações Específicas do Agente Pesquisador
 
 ## Ferramentas Disponíveis
-- Busca na Web (Google Search API / Serper API)
+- Busca na Web com API do Gemini
 - Extração de conteúdo de páginas
 - Análise de dados estruturados
 
@@ -276,7 +276,7 @@ JSON contendo:
 1. **Buscar Informações Online**
    - Realizar buscas com palavras-chave estratégicas
    - Acessar até 10 URLs por pesquisa
-   - Priorizar fontes confiáveis (.gov, .edu, sites especializados)
+   - Priorizar fontes confiáveis conforme arquivo de configuração
 
 2. **Extrair e Processar Dados**
    - Extrair texto relevante de páginas web
@@ -334,9 +334,6 @@ JSON contendo:
   ]
 }
 ```
-```
-
----
 
 #### **Agente 2: Writer (Escritor)**
 - **API**: Gemini
