@@ -1,0 +1,16 @@
+Crie um novo agente no Fluxo Post_Esportivo chamado Criador de Arte.
+Este agente deverá escrever o prompt para a criação das imagens do post.
+As imagens serão criadas utilizando ferramentas especializadas de criação de imagens de inteligência artificial generativa.
+O agente Criador de Arte deverá escrever o prompt detalhado das imagens.
+Devem ser definidas duas imagens. Imagem principal e Imagem para o meio do post.
+
+Crie o novo agente e seus arquivos actions.md, config,json, context.md, task.md.
+
+Considere utilizar API Claude para essa atividade.
+
+O novo agente deve ser executado após o reviewer.
+
+Input do agente: post e SEO revisados.
+Output do agente: novo arquivo texto chamado image.txt gravado na pasta /data/output.
+
+No arquivo image.txt devem ser gerados os 

@@ -53,8 +53,14 @@ def setup_logger(log_level: str = "INFO", logs_dir: str = "logs", errors_dir: st
     logger = logging.getLogger("MultiAgentBlog")
     logger.setLevel(getattr(logging, log_level.upper()))
 
+    # Evitar propagação para o root logger
+    logger.propagate = False
+
     # Remover handlers existentes
     logger.handlers.clear()
+
+    # Configurar nível de log do root logger (para bibliotecas externas)
+    logging.root.setLevel(logging.WARNING)
 
     # Formato dos logs
     formatter = logging.Formatter(
