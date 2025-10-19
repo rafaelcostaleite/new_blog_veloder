@@ -18,9 +18,14 @@
           "id": "reviewer",
           "order": 3,
           "api": "claude"
+        },
+        {
+          "id": "art_creator",
+          "order": 4,
+          "api": "claude"
         }
       ],
-      "output_files": ["Post.txt", "SEO.txt"]
+      "output_files": ["Post.txt", "SEO.txt", "image.txt"]
     }
   ]
 }

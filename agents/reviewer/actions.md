@@ -97,7 +97,9 @@
 
 ## Formato de Output
 
-### Arquivo: Post.txt
+IMPORTANTE: Você DEVE retornar a saída EXATAMENTE no seguinte formato, usando os marcadores específicos:
+
+=== POST HTML ===
 ```html
 <h1>Título Principal Otimizado para SEO</h1>
 
@@ -124,8 +126,6 @@
 <p>Resumo final com call-to-action...</p>
 ```
 
-### Arquivo: SEO.txt
-```
 === DADOS SEO ===
 
 Frase-chave de Foco:

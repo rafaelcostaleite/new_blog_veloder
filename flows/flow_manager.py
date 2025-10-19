@@ -60,6 +60,7 @@ class FlowManager:
 
             # Executar pipeline de agentes
             current_input = f"Assunto: {subject}"
+            all_generated_files = []
 
             for i, agent_config in enumerate(agents_config, 1):
                 agent_id = agent_config['id']
@@ -73,13 +74,18 @@ class FlowManager:
                 agent = self.agent_factory.create_agent(agent_id, api_override=api)
                 result = self.agent_factory.execute_agent(agent, current_input)
 
-                # Resultado se torna input do próximo agente
+                # Processar resultado do agente específico
+                agent_files = self._process_agent_result(agent_id, result)
+                all_generated_files.extend(agent_files)
+
+                # Preparar input para próximo agente
+                # Resultado sempre se torna input do próximo agente
                 current_input = result
 
                 self.logger.info(f"Agente {agent_id} concluído com sucesso\n")
 
             # Processar resultado final
-            final_result = self._process_final_result(current_input, output_files)
+            final_result = {'files': all_generated_files}
 
             return {
                 'success': True,
@@ -93,6 +99,59 @@ class FlowManager:
                 'success': False,
                 'error': str(e)
             }
+
+    def _process_agent_result(self, agent_id: str, result: str) -> List[str]:
+        """
+        Processa resultado de um agente específico e salva arquivos quando necessário
+
+        Args:
+            agent_id: ID do agente
+            result: Resultado do agente
+
+        Returns:
+            Lista de arquivos gerados
+        """
+        generated_files = []
+
+        try:
+            # Reviewer: salva Post.txt e SEO.txt
+            if agent_id == 'reviewer':
+                if "=== POST HTML ===" in result and "=== DADOS SEO ===" in result:
+                    # Separar POST e SEO
+                    parts = result.split("=== DADOS SEO ===")
+
+                    # Extrair HTML
+                    html_part = parts[0].replace("=== POST HTML ===", "").strip()
+                    post_file = self.output_dir / "Post.txt"
+                    write_output_file(post_file, html_part)
+                    generated_files.append(str(post_file))
+                    self.logger.info(f"Arquivo gerado: {post_file}")
+
+                    # Extrair SEO
+                    seo_part = parts[1].strip()
+                    seo_file = self.output_dir / "SEO.txt"
+                    write_output_file(seo_file, seo_part)
+                    generated_files.append(str(seo_file))
+                    self.logger.info(f"Arquivo gerado: {seo_file}")
+                else:
+                    self.logger.warning(f"Formato inesperado do reviewer: {result[:100]}")
+
+            # Art Creator: salva apenas image.txt
+            elif agent_id == 'art_creator':
+                image_file = self.output_dir / "image.txt"
+                write_output_file(image_file, result)
+                generated_files.append(str(image_file))
+                self.logger.info(f"Arquivo gerado: {image_file}")
+
+            # Outros agentes: não salvam arquivos
+            else:
+                pass
+
+            return generated_files
+
+        except Exception as e:
+            self.logger.error(f"Erro ao processar resultado do agente {agent_id}: {str(e)}")
+            return []
 
     def _process_final_result(self, result: str, output_files: List[str]) -> Dict:
         """
@@ -134,7 +193,43 @@ class FlowManager:
 
             except json.JSONDecodeError:
                 # Não é JSON, tentar separar manualmente se contiver marcadores
-                if "=== POST HTML ===" in result and "=== SEO DATA ===" in result:
+
+                # Verificar se contém output do art_creator (image prompts)
+                if "=== PROMPTS PARA GERAÇÃO DE IMAGENS ===" in result:
+                    # Separar as três partes: POST, SEO e IMAGE
+
+                    # Extrair Post HTML (entre início e === DADOS SEO ===)
+                    if "=== POST HTML ===" in result and "=== DADOS SEO ===" in result:
+                        post_start = result.find("=== POST HTML ===") + len("=== POST HTML ===")
+                        post_end = result.find("=== DADOS SEO ===")
+                        html_part = result[post_start:post_end].strip()
+
+                        post_file = self.output_dir / "Post.txt"
+                        write_output_file(post_file, html_part)
+                        generated_files.append(str(post_file))
+                        self.logger.info(f"Arquivo gerado: {post_file}")
+
+                    # Extrair SEO (entre === DADOS SEO === e === PROMPTS)
+                    seo_start = result.find("=== DADOS SEO ===") + len("=== DADOS SEO ===")
+                    seo_end = result.find("=== PROMPTS PARA GERAÇÃO DE IMAGENS ===")
+                    seo_part = result[seo_start:seo_end].strip()
+
+                    seo_file = self.output_dir / "SEO.txt"
+                    write_output_file(seo_file, seo_part)
+                    generated_files.append(str(seo_file))
+                    self.logger.info(f"Arquivo gerado: {seo_file}")
+
+                    # Extrair Image Prompts
+                    image_start = result.find("=== PROMPTS PARA GERAÇÃO DE IMAGENS ===")
+                    image_part = result[image_start:].strip()
+
+                    image_file = self.output_dir / "image.txt"
+                    write_output_file(image_file, image_part)
+                    generated_files.append(str(image_file))
+                    self.logger.info(f"Arquivo gerado: {image_file}")
+
+                elif "=== POST HTML ===" in result and "=== SEO DATA ===" in result:
+                    # Apenas POST e SEO (reviewer sem art_creator)
                     parts = result.split("=== SEO DATA ===")
 
                     # Extrair HTML

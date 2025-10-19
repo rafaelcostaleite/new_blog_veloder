@@ -13,4 +13,7 @@ O novo agente deve ser executado após o reviewer.
 Input do agente: post e SEO revisados.
 Output do agente: novo arquivo texto chamado image.txt gravado na pasta /data/output.
 
-No arquivo image.txt devem ser gerados os 
+No arquivo image.txt devem ser gerados os prompt de cada imagem a serem criadas.
+
+------------------------
+"claude-sonnet-4-20250514"
