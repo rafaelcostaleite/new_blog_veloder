@@ -2,7 +2,7 @@
   "name": "Writer",
   "role": "Escritor de Conteúdo",
   "api": "claude",
-  "model": "claude-sonnet-4-20250514",
+  "model": "claude-3-5-sonnet-20241022",
   "temperature": 0.7,
   "max_tokens": 8000
 }

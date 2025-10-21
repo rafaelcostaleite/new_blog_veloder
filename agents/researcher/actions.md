@@ -8,6 +8,7 @@
 ## Ações Permitidas
 1. **Buscar Informações Online**
    - Realizar buscas com palavras-chave estratégicas
+   - Quando mencionados datas no assunto filtre informações desta data
    - Acessar até 10 URLs por pesquisa
    - Priorizar fontes confiáveis
 
@@ -18,7 +19,8 @@
 
 3. **Validar Fontes**
    - Verificar credibilidade das fontes
-   - Priorizar conteúdo dos últimos 12 meses
+   - Priorizar conteúdos mais recentes
+   - Quando uma data for mencionada no assunto original valide a data nos resultados
    - Evitar clickbait e conteúdo não verificado
 
 4. **Estruturar Resultado**

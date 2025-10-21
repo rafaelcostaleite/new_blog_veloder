@@ -1,0 +1,9 @@
+{
+  "name": "Criador de Arte",
+  "role": "Especialista em criação de prompts para geração de imagens com IA",
+  "api": "claude",
+  "model": "claude-3-5-sonnet-20241022",
+  "temperature": 0.8,
+  "max_tokens": 4000,
+  "description": "Cria prompts detalhados e otimizados para geração de imagens usando ferramentas de IA generativa, garantindo qualidade visual e alinhamento com o conteúdo do post"
+}
