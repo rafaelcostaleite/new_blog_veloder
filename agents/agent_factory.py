@@ -28,10 +28,8 @@ class AgentFactory:
             google_key: Chave da API Google
             config: Configuração do sistema
         """
-        self.services = {
-            'claude': ClaudeService(anthropic_key),
-            'gemini': GeminiService(google_key)
-        }
+        self.anthropic_key = anthropic_key
+        self.google_key = google_key
         self.config = config
         self.log_agent = config.getboolean('logging', 'log_agent', fallback=False) if config else False
 
@@ -60,8 +58,17 @@ class AgentFactory:
         # Determinar API a usar
         api = api_override if api_override else config.get('api', 'gemini')
 
-        if api not in self.services:
-            raise ValueError(f"API '{api}' não suportada. Use: {list(self.services.keys())}")
+        # Criar serviço apropriado
+        if api == 'claude':
+            service = ClaudeService(self.anthropic_key)
+        elif api == 'gemini':
+            # Habilitar Google Search apenas para o agente researcher
+            enable_search = (agent_id == 'researcher')
+            service = GeminiService(self.google_key, enable_search=enable_search)
+            if enable_search:
+                logger.info(f"Google Search grounding habilitado para agente '{agent_id}'")
+        else:
+            raise ValueError(f"API '{api}' não suportada. Use: claude, gemini")
 
         # Construir agente
         agent = {
@@ -75,7 +82,7 @@ class AgentFactory:
             'context': context,
             'task': task,
             'actions': actions,
-            'service': self.services[api]
+            'service': service
         }
 
         logger.info(f"Agente '{agent['name']}' criado - API: {api}, Modelo: {agent['model']}")
