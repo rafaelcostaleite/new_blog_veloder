@@ -17,3 +17,7 @@ No arquivo image.txt devem ser gerados os prompt de cada imagem a serem criadas.
 
 ------------------------
 "claude-sonnet-4-20250514"
+
+-------------------------
+Melhoria. 
+Faça uma melhoria para criar um novo parâmetro no arquivo config.ini chamado log_agent. Quando estiver ativo o input e output dos agentes deverá ser apresentado no arquivo de log e console da aplicação.

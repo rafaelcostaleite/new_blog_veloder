@@ -33,7 +33,8 @@ class FlowManager:
         # Inicializar factory
         self.agent_factory = AgentFactory(
             anthropic_key=os.getenv('ANTHROPIC_API_KEY'),
-            google_key=os.getenv('GOOGLE_API_KEY')
+            google_key=os.getenv('GOOGLE_API_KEY'),
+            config=config
         )
 
     def execute_flow(self, flow_config: Dict, subject: str) -> Dict:

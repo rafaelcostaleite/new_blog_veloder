@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Dict
 import json
 import logging
+import configparser
 
 from services.claude_service import ClaudeService
 from services.gemini_service import GeminiService
@@ -18,18 +19,21 @@ logger = logging.getLogger("MultiAgentBlog")
 class AgentFactory:
     """Factory para criar e configurar agentes"""
 
-    def __init__(self, anthropic_key: str, google_key: str):
+    def __init__(self, anthropic_key: str, google_key: str, config: configparser.ConfigParser = None):
         """
         Inicializa a factory
 
         Args:
             anthropic_key: Chave da API Anthropic
             google_key: Chave da API Google
+            config: Configuração do sistema
         """
         self.services = {
             'claude': ClaudeService(anthropic_key),
             'gemini': GeminiService(google_key)
         }
+        self.config = config
+        self.log_agent = config.getboolean('logging', 'log_agent', fallback=False) if config else False
 
     def create_agent(self, agent_id: str, api_override: str = None) -> Dict:
         """
@@ -128,6 +132,17 @@ Gere o output seguindo EXATAMENTE o formato especificado em "Formato de Output".
         # Construir prompt
         prompt = self.build_prompt(agent, input_data)
 
+        # Logar input se log_agent estiver ativo
+        if self.log_agent:
+            logger.info("="*60)
+            logger.info("AGENT INPUT")
+            logger.info("="*60)
+            logger.info(f"Agent: {agent['name']} ({agent['id']})")
+            logger.info(f"API: {agent['api']} | Model: {agent['model']}")
+            logger.info("-"*60)
+            logger.info(prompt)
+            logger.info("="*60)
+
         # Chamar API
         service = agent['service']
         result = service.call_with_retry(
@@ -139,6 +154,16 @@ Gere o output seguindo EXATAMENTE o formato especificado em "Formato de Output".
 
         if not result:
             raise Exception(f"Agente '{agent['name']}' não retornou resposta")
+
+        # Logar output se log_agent estiver ativo
+        if self.log_agent:
+            logger.info("="*60)
+            logger.info("AGENT OUTPUT")
+            logger.info("="*60)
+            logger.info(f"Agent: {agent['name']} ({agent['id']})")
+            logger.info("-"*60)
+            logger.info(result)
+            logger.info("="*60)
 
         logger.info(f"Agente '{agent['name']}' concluído")
 
