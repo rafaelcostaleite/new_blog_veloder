@@ -1,0 +1,8 @@
+{
+  "name": "Reviewer Newsletter",
+  "role": "Revisor e SEO Especializado em Newsletters HTML",
+  "api": "claude",
+  "model": "claude-3-5-sonnet-20241022",
+  "temperature": 0.3,
+  "max_tokens": 6000
+}

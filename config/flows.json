@@ -26,6 +26,33 @@
         }
       ],
       "output_files": ["Post.txt", "SEO.txt", "image.txt"]
+    },
+    {
+      "name": "Post_Newsletter",
+      "description": "Fluxo para criação de newsletters usando técnicas de Brevidade Inteligente.",
+      "agents": [
+        {
+          "id": "researcher",
+          "order": 1,
+          "api": "gemini"
+        },
+        {
+          "id": "writer_news",
+          "order": 2,
+          "api": "claude"
+        },
+        {
+          "id": "reviewer_news",
+          "order": 3,
+          "api": "claude"
+        },
+        {
+          "id": "art_creator",
+          "order": 4,
+          "api": "claude"
+        }
+      ],
+      "output_files": ["Post.txt", "SEO.txt", "image.txt"]
     }
   ]
 }

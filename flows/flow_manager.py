@@ -116,7 +116,7 @@ class FlowManager:
 
         try:
             # Reviewer: salva Post.txt e SEO.txt
-            if agent_id == 'reviewer':
+            if agent_id in ['reviewer', 'reviewer_news']:
                 if "=== POST HTML ===" in result and "=== DADOS SEO ===" in result:
                     # Separar POST e SEO
                     parts = result.split("=== DADOS SEO ===")
