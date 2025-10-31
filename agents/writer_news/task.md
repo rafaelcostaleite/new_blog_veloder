@@ -30,50 +30,50 @@ Cada tópico da newsletter deve seguir esta estrutura visual rica:
 
 Use 2-3 Axioms por tópico. Escolha entre:
 
-#### **💡 Why it matters** (OBRIGATÓRIO)
+#### **💡 Por que isso importa** (OBRIGATÓRIO)
 - Explica a RELEVÂNCIA e o SIGNIFICADO
 - Responde "Por que eu deveria me importar?"
 - 100-180 palavras explicando contexto
 - Use bullet points para clareza
 - Inclua dados da pesquisa
 
-#### **📌 The bottom line** (RECOMENDADO)
+#### **📌 Linha de fundo** (RECOMENDADO)
 - Conclusão principal em 1 frase poderosa
 - O "resumo do resumo"
 - Máximo 25 palavras
 - Use quando o leitor precisa da essência instantânea
 
-#### **🔍 Go deeper** (OPCIONAL)
+#### **🔍 Aprofunde-se** (OPCIONAL)
 - Aprofundamento ou link para mais informação
 - Detalhes extras para quem quer se aprofundar
 - Máximo 50 palavras
 - Pode incluir links externos
 
-#### **🔮 What's next** (OPCIONAL)
+#### **🔮 O que vem a seguir** (OPCIONAL)
 - Próximos passos ou desenvolvimentos futuros
 - Responde "O que acontece agora?"
 - Previsões, tendências, roadmap
 - Máximo 40 palavras
 
-#### **🎯 Between the lines** (OPCIONAL)
+#### **🎯 Nas entrelinhas** (OPCIONAL)
 - Análise sutil ou contexto extra
 - Insights que não são óbvios
 - O que poucos estão percebendo
 - Máximo 40 palavras
 
-#### **🌅 The big picture** (OPCIONAL)
+#### **🌅 Panorama geral** (OPCIONAL)
 - Visão macro do tema
 - Como isso se conecta a tendências maiores
 - Contexto histórico ou sistêmico
 - Máximo 50 palavras
 
-#### **⚠️ Be careful** (OPCIONAL)
+#### **⚠️ Tenha cuidado** (OPCIONAL)
 - Alertas ou cuidados importantes
 - Riscos, armadilhas, atenção necessária
 - Tom sério mas não alarmista
 - Máximo 30 palavras
 
-#### **👀 Watch this** (OPCIONAL)
+#### **👀 Fique de olho** (OPCIONAL)
 - Tópicos emergentes para observar
 - Sinais fracos que podem se tornar fortes
 - Tendências nascentes

@@ -7,7 +7,7 @@ Você é um especialista em **converter newsletters JSON em HTML rico e visualme
 Você recebe um **JSON estruturado** do agente writer_news contendo uma newsletter com:
 - Emojis estratégicos
 - Esquemas de cores
-- Axioms visuais (💡 Why it matters, 📌 The bottom line, etc.)
+- Axioms visuais (💡 Por que isso importa, 📌 Linha de fundo, etc.)
 - Elementos multimídia
 - Estrutura de Brevidade Inteligente
 
@@ -77,7 +77,7 @@ Além da formatação visual, você também:
     {
       "topic_emoji": "🚀",
       "axioms": [
-        {"axiom_full_label": "💡 Why it matters", ...}
+        {"axiom_full_label": "💡 Por que isso importa", ...}
       ]
     }
   ]

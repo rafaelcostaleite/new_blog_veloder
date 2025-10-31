@@ -137,10 +137,10 @@
 
       "axioms": [
         {
-          "axiom_type": "why_it_matters",
-          "axiom_label": "Why it matters",
+          "axiom_type": "por_que_isso_importa",
+          "axiom_label": "Por que isso importa",
           "axiom_emoji": "💡",
-          "axiom_full_label": "💡 Why it matters",
+          "axiom_full_label": "💡 Por que isso importa",
           "content": {
             "explanation": "Explicação completa da relevância e significado em 100-180 palavras. Use parágrafos curtos de 1-3 linhas. Seja específico sobre o impacto. Responda claramente 'Por que eu deveria me importar?' com dados concretos.",
             "key_points": [
@@ -151,17 +151,17 @@
           }
         },
         {
-          "axiom_type": "the_bottom_line",
-          "axiom_label": "The bottom line",
+          "axiom_type": "linha_de_fundo",
+          "axiom_label": "Linha de fundo",
           "axiom_emoji": "📌",
-          "axiom_full_label": "📌 The bottom line",
+          "axiom_full_label": "📌 Linha de fundo",
           "content": "Conclusão principal em 1 frase poderosa. Máximo 25 palavras. O 'resumo do resumo'."
         },
         {
-          "axiom_type": "go_deeper",
-          "axiom_label": "Go deeper",
+          "axiom_type": "aprofunde_se",
+          "axiom_label": "Aprofunde-se",
           "axiom_emoji": "🔍",
-          "axiom_full_label": "🔍 Go deeper",
+          "axiom_full_label": "🔍 Aprofunde-se",
           "content": "Aprofundamento opcional para leitores interessados. Máximo 50 palavras. Pode incluir links externos.",
           "external_link": {
             "url": "https://example.com/artigo-completo",
@@ -193,10 +193,10 @@
 
       "axioms": [
         {
-          "axiom_type": "why_it_matters",
-          "axiom_label": "Why it matters",
+          "axiom_type": "por_que_isso_importa",
+          "axiom_label": "Por que isso importa",
           "axiom_emoji": "💡",
-          "axiom_full_label": "💡 Why it matters",
+          "axiom_full_label": "💡 Por que isso importa",
           "content": {
             "explanation": "Explicação da relevância...",
             "key_points": [
@@ -206,10 +206,10 @@
           }
         },
         {
-          "axiom_type": "whats_next",
-          "axiom_label": "What's next",
+          "axiom_type": "o_que_vem_a_seguir",
+          "axiom_label": "O que vem a seguir",
           "axiom_emoji": "🔮",
-          "axiom_full_label": "🔮 What's next",
+          "axiom_full_label": "🔮 O que vem a seguir",
           "content": "Próximos passos ou desenvolvimentos futuros. Máximo 40 palavras. Previsões ou roadmap."
         }
       ],
@@ -230,27 +230,27 @@
 
       "axioms": [
         {
-          "axiom_type": "why_it_matters",
-          "axiom_label": "Why it matters",
+          "axiom_type": "por_que_isso_importa",
+          "axiom_label": "Por que isso importa",
           "axiom_emoji": "💡",
-          "axiom_full_label": "💡 Why it matters",
+          "axiom_full_label": "💡 Por que isso importa",
           "content": {
             "explanation": "Explicação...",
             "key_points": ["Ponto 1", "Ponto 2"]
           }
         },
         {
-          "axiom_type": "between_the_lines",
-          "axiom_label": "Between the lines",
+          "axiom_type": "nas_entrelinhas",
+          "axiom_label": "Nas entrelinhas",
           "axiom_emoji": "🎯",
-          "axiom_full_label": "🎯 Between the lines",
+          "axiom_full_label": "🎯 Nas entrelinhas",
           "content": "Análise sutil ou insight que não é óbvio. Máximo 40 palavras."
         },
         {
-          "axiom_type": "the_big_picture",
-          "axiom_label": "The big picture",
+          "axiom_type": "panorama_geral",
+          "axiom_label": "Panorama geral",
           "axiom_emoji": "🌅",
-          "axiom_full_label": "🌅 The big picture",
+          "axiom_full_label": "🌅 Panorama geral",
           "content": "Visão macro do tema. Como isso se conecta a tendências maiores. Máximo 50 palavras."
         }
       ],
@@ -320,14 +320,14 @@
 
 | Axiom | Emoji Principal | Alternativas | Quando Usar |
 |-------|----------------|--------------|-------------|
-| **Why it matters** | 💡 | ⭐ 🎯 ‼️ | SEMPRE - Explica relevância |
-| **The bottom line** | 📌 | ✅ 💬 📊 | Conclusão em 1 frase |
-| **Go deeper** | 🔍 | 📖 ➡️ 🔗 📚 | Links/aprofundamento |
-| **What's next** | 🔮 | 🚀 ⏭️ 🗓️ | Próximos passos/futuro |
-| **Between the lines** | 🎯 | 🧠 💭 👁️ | Insights sutis |
-| **The big picture** | 🌅 | 🗺️ 📊 🌍 | Visão macro |
-| **Be careful** | ⚠️ | 🚨 ⚡ 🔺 | Alertas importantes |
-| **Watch this** | 👀 | 📺 🎬 🔭 | Tendências emergentes |
+| **Por que isso importa** | 💡 | ⭐ 🎯 ‼️ | SEMPRE - Explica relevância |
+| **Linha de fundo** | 📌 | ✅ 💬 📊 | Conclusão em 1 frase |
+| **Aprofunde-se** | 🔍 | 📖 ➡️ 🔗 📚 | Links/aprofundamento |
+| **O que vem a seguir** | 🔮 | 🚀 ⏭️ 🗓️ | Próximos passos/futuro |
+| **Nas entrelinhas** | 🎯 | 🧠 💭 👁️ | Insights sutis |
+| **Panorama geral** | 🌅 | 🗺️ 📊 🌍 | Visão macro |
+| **Tenha cuidado** | ⚠️ | 🚨 ⚡ 🔺 | Alertas importantes |
+| **Fique de olho** | 👀 | 📺 🎬 🔭 | Tendências emergentes |
 
 ### Categorias Temáticas de Tópicos:
 

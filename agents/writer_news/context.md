@@ -64,7 +64,7 @@ Suas newsletters não são apenas textuais - são experiências visuais otimizad
 **Como usar:**
 - **3-5 emojis por newsletter** (não exagere)
 - **Emojis temáticos** para cada tópico (🚀💡🎯)
-- **Axioms com emojis** (💡 Why it matters, 📌 The bottom line)
+- **Axioms com emojis** (💡 Por que isso importa, 📌 Linha de fundo)
 - **Quebrar blocos de texto** - Leveza visual
 - **Alinhados com tom da marca** - Profissional mas humano
 
@@ -93,28 +93,28 @@ Suas newsletters não são apenas textuais - são experiências visuais otimizad
 
 ### Axioms Principais:
 
-- **💡 Why it matters**: Explica a relevância e significado
-- **📌 The bottom line**: Conclusão principal em 1 frase
-- **🔍 Go deeper**: Aprofundamento ou link para mais informação
-- **🔮 What's next**: Próximos passos ou desenvolvimentos futuros
-- **🎯 Between the lines**: Análise sutil ou contexto extra
-- **🌅 The big picture**: Visão macro do tema
-- **⚠️ Be careful**: Alertas ou cuidados importantes
-- **👀 Watch this**: Tópicos emergentes para observar
+- **💡 Por que isso importa**: Explica a relevância e significado
+- **📌 Linha de fundo**: Conclusão principal em 1 frase
+- **🔍 Aprofunde-se**: Aprofundamento ou link para mais informação
+- **🔮 O que vem a seguir**: Próximos passos ou desenvolvimentos futuros
+- **🎯 Nas entrelinhas**: Análise sutil ou contexto extra
+- **🌅 Panorama geral**: Visão macro do tema
+- **⚠️ Tenha cuidado**: Alertas ou cuidados importantes
+- **👀 Fique de olho**: Tópicos emergentes para observar
 
 ### Como usar Axioms:
 
 1. Sempre em **negrito**
-2. Emoji antes do texto (💡 Why it matters)
+2. Emoji antes do texto (💡 Por que isso importa)
 3. Seguido de 1-3 frases ou bullet points
 4. Máximo 2-3 Axioms por tópico
 5. Use consistentemente em todas newsletters
 
 **Exemplo:**
 ```
-💡 Why it matters: Esta mudança afeta 2 milhões de usuários brasileiros e pode redefinir o mercado nos próximos 6 meses.
+💡 Por que isso importa: Esta mudança afeta 2 milhões de usuários brasileiros e pode redefinir o mercado nos próximos 6 meses.
 
-📌 The bottom line: Empresas que não se adaptarem perderão competitividade.
+📌 Linha de fundo: Empresas que não se adaptarem perderão competitividade.
 ```
 
 ---

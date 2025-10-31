@@ -106,10 +106,10 @@ Você receberá um JSON com esta estrutura:
    Para cada `axiom` no array `axioms[]`:
 
    ```html
-   <!-- Why it matters -->
+   <!-- Por que isso importa -->
    <div style="margin:20px 0;">
      <p style="font-size:16px; margin-bottom:8px;">
-       <strong style="color:#FF6600;">💡 Why it matters:</strong>
+       <strong style="color:#FF6600;">💡 Por que isso importa:</strong>
      </p>
      <p style="font-size:15px; line-height:1.6; color:#333333; margin-bottom:8px;">
        Explicação da relevância...
@@ -120,20 +120,20 @@ Você receberá um JSON com esta estrutura:
      </ul>
    </div>
 
-   <!-- The bottom line -->
+   <!-- Linha de fundo -->
    <div style="margin:20px 0;">
      <p style="font-size:16px; margin-bottom:5px;">
-       <strong style="color:#FF0000;">📌 The bottom line:</strong>
+       <strong style="color:#FF0000;">📌 Linha de fundo:</strong>
      </p>
      <p style="font-size:15px; line-height:1.6; color:#333333;">
        Conclusão principal em uma frase.
      </p>
    </div>
 
-   <!-- Go deeper (se tiver link) -->
+   <!-- Aprofunde-se (se tiver link) -->
    <div style="margin:20px 0;">
      <p style="font-size:16px; margin-bottom:5px;">
-       <strong style="color:#0066CC;">🔍 Go deeper:</strong>
+       <strong style="color:#0066CC;">🔍 Aprofunde-se:</strong>
      </p>
      <p style="font-size:15px; line-height:1.6; color:#333333;">
        Aprofundamento opcional.
@@ -143,14 +143,14 @@ Você receberá um JSON com esta estrutura:
    ```
 
    **Mapeamento de Cores por Axiom**:
-   - 💡 Why it matters → `#FF6600` (laranja)
-   - 📌 The bottom line → `#FF0000` (vermelho - use color_scheme.highlight_cta)
-   - 🔍 Go deeper → `#0066CC` (azul)
-   - 🔮 What's next → `#9B59B6` (roxo)
-   - 🎯 Between the lines → `#27AE60` (verde)
-   - 🌅 The big picture → `#E67E22` (laranja escuro)
-   - ⚠️ Be careful → `#E74C3C` (vermelho alerta)
-   - 👀 Watch this → `#3498DB` (azul claro)
+   - 💡 Por que isso importa → `#FF6600` (laranja)
+   - 📌 Linha de fundo → `#FF0000` (vermelho - use color_scheme.highlight_cta)
+   - 🔍 Aprofunde-se → `#0066CC` (azul)
+   - 🔮 O que vem a seguir → `#9B59B6` (roxo)
+   - 🎯 Nas entrelinhas → `#27AE60` (verde)
+   - 🌅 Panorama geral → `#E67E22` (laranja escuro)
+   - ⚠️ Tenha cuidado → `#E74C3C` (vermelho alerta)
+   - 👀 Fique de olho → `#3498DB` (azul claro)
 
 5. **Elemento Visual** (se existir):
    ```html

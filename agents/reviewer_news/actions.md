@@ -54,7 +54,7 @@ Você DEVE retornar EXATAMENTE neste formato com os marcadores específicos:
   <!-- Axiom: Why it matters -->
   <div style="margin:20px 0; padding-left:15px; border-left:3px solid #FF6600;">
     <p style="font-size:16px; margin:0 0 10px 0; font-family:Arial,Helvetica,sans-serif;">
-      <strong style="color:#FF6600;">💡 Why it matters:</strong>
+      <strong style="color:#FF6600;">💡 Por que isso importa:</strong>
     </p>
     <p style="font-size:15px; line-height:1.6; margin:0 0 10px 0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
       Esta vitória representa uma mudança significativa no cenário do triathlon feminino, quebrando o domínio de favoritas estabelecidas e abrindo caminho para nova geração de atletas.
@@ -69,7 +69,7 @@ Você DEVE retornar EXATAMENTE neste formato com os marcadores específicos:
   <!-- Axiom: The bottom line -->
   <div style="margin:20px 0; padding:12px; background-color:#FFF5F5; border-radius:6px;">
     <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-      <strong style="color:#FF0000;">📌 The bottom line:</strong>
+      <strong style="color:#FF0000;">📌 Linha de fundo:</strong>
     </p>
     <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
       Tertsch redefiniu o que é possível para atletas emergentes no circuito mundial.
@@ -79,7 +79,7 @@ Você DEVE retornar EXATAMENTE neste formato com os marcadores específicos:
   <!-- Axiom: Go deeper (opcional) -->
   <div style="margin:20px 0;">
     <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-      <strong style="color:#0066CC;">🔍 Go deeper:</strong>
+      <strong style="color:#0066CC;">🔍 Aprofunde-se:</strong>
     </p>
     <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
       A trajetória de Tertsch inclui 3 anos de preparação focada após lesão grave em 2022.
@@ -104,7 +104,7 @@ Você DEVE retornar EXATAMENTE neste formato com os marcadores específicos:
   <!-- Axiom: Why it matters -->
   <div style="margin:20px 0; padding-left:15px; border-left:3px solid #FF6600;">
     <p style="font-size:16px; margin:0 0 10px 0; font-family:Arial,Helvetica,sans-serif;">
-      <strong style="color:#FF6600;">💡 Why it matters:</strong>
+      <strong style="color:#FF6600;">💡 Por que isso importa:</strong>
     </p>
     <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
       Vitória em casa reacende paixão nacional pelo triathlon na Austrália, país que não celebrava título mundial há 7 anos.
@@ -114,7 +114,7 @@ Você DEVE retornar EXATAMENTE neste formato com os marcadores específicos:
   <!-- Axiom: What's next -->
   <div style="margin:20px 0;">
     <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-      <strong style="color:#9B59B6;">🔮 What's next:</strong>
+      <strong style="color:#9B59B6;">🔮 O que vem a seguir:</strong>
     </p>
     <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
       Hauser já confirmou presença nos Jogos Olímpicos de 2026 como favorito ao ouro.
@@ -205,24 +205,24 @@ Use estas cores específicas para cada tipo de Axiom:
 
 | Axiom | Emoji | Cor HEX | Uso |
 |-------|-------|---------|-----|
-| **Why it matters** | 💡 | #FF6600 | Laranja vibrante |
-| **The bottom line** | 📌 | #FF0000 | Vermelho (use color_scheme.highlight_cta se disponível) |
-| **Go deeper** | 🔍 | #0066CC | Azul padrão de links |
-| **What's next** | 🔮 | #9B59B6 | Roxo |
-| **Between the lines** | 🎯 | #27AE60 | Verde |
-| **The big picture** | 🌅 | #E67E22 | Laranja escuro |
-| **Be careful** | ⚠️ | #E74C3C | Vermelho alerta |
-| **Watch this** | 👀 | #3498DB | Azul claro |
+| **Por que isso importa** | 💡 | #FF6600 | Laranja vibrante |
+| **Linha de fundo** | 📌 | #FF0000 | Vermelho (use color_scheme.highlight_cta se disponível) |
+| **Aprofunde-se** | 🔍 | #0066CC | Azul padrão de links |
+| **O que vem a seguir** | 🔮 | #9B59B6 | Roxo |
+| **Nas entrelinhas** | 🎯 | #27AE60 | Verde |
+| **Panorama geral** | 🌅 | #E67E22 | Laranja escuro |
+| **Tenha cuidado** | ⚠️ | #E74C3C | Vermelho alerta |
+| **Fique de olho** | 👀 | #3498DB | Azul claro |
 
 ---
 
 ## TEMPLATES DE AXIOMS
 
-### Template: Why it matters
+### Template: Por que isso importa
 ```html
 <div style="margin:20px 0; padding-left:15px; border-left:3px solid #FF6600;">
   <p style="font-size:16px; margin:0 0 10px 0; font-family:Arial,Helvetica,sans-serif;">
-    <strong style="color:#FF6600;">💡 Why it matters:</strong>
+    <strong style="color:#FF6600;">💡 Por que isso importa:</strong>
   </p>
   <p style="font-size:15px; line-height:1.6; margin:0 0 10px 0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
     [TEXTO EXPLICATIVO]
@@ -235,11 +235,11 @@ Use estas cores específicas para cada tipo de Axiom:
 </div>
 ```
 
-### Template: The bottom line
+### Template: Linha de fundo
 ```html
 <div style="margin:20px 0; padding:12px; background-color:#FFF5F5; border-radius:6px;">
   <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-    <strong style="color:#FF0000;">📌 The bottom line:</strong>
+    <strong style="color:#FF0000;">📌 Linha de fundo:</strong>
   </p>
   <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
     [CONCLUSÃO EM UMA FRASE]
@@ -247,11 +247,11 @@ Use estas cores específicas para cada tipo de Axiom:
 </div>
 ```
 
-### Template: Go deeper
+### Template: Aprofunde-se
 ```html
 <div style="margin:20px 0;">
   <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-    <strong style="color:#0066CC;">🔍 Go deeper:</strong>
+    <strong style="color:#0066CC;">🔍 Aprofunde-se:</strong>
   </p>
   <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
     [APROFUNDAMENTO]
@@ -261,11 +261,11 @@ Use estas cores específicas para cada tipo de Axiom:
 </div>
 ```
 
-### Template: What's next
+### Template: O que vem a seguir
 ```html
 <div style="margin:20px 0;">
   <p style="font-size:16px; margin:0 0 8px 0; font-family:Arial,Helvetica,sans-serif;">
-    <strong style="color:#9B59B6;">🔮 What's next:</strong>
+    <strong style="color:#9B59B6;">🔮 O que vem a seguir:</strong>
   </p>
   <p style="font-size:15px; line-height:1.6; margin:0; color:#333333; font-family:Arial,Helvetica,sans-serif;">
     [PRÓXIMOS PASSOS/FUTURO]
